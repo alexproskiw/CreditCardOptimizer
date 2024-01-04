@@ -1,0 +1,98 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h2 {
+    display: grid;
+    justify-content: center;
+    text-decoration: underline;
+    margin: 0px;
+}
+#header {
+    background-color: #232c2e;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+#header-title {
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+#header-links {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: right;
+}
+#header-links a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 150%;
+}
+#page {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: #3B4A4D;
+}
+.content {
+    background-color: #c4c9ca;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow {
+    padding: 10px;
+    margin: 10px;
+    opacity: 60%;
+}
+#card-item-center {
+    padding: 10px;
+    margin: 10px;
+    background-color: #30C9E8;
+    border-radius: 20px;
+}
+#card-description {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#recommended-card {
+    padding: 10px;
+    margin: 10px;
+    z-index: 2;
+    background-color: #FF4431;
+    border-radius: 20px;
+}
+#footer {
+    background-color: #232c2e;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+#footer-title {
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+#footer-copyright {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: right;
+    color: #FFFFFF;
+    font-size: 150%;
+}

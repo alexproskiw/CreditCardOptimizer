@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Credit Card Optimizer</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"> 
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div id="header-title">
+            <h1>Credit Card Optimizer</h1>
+        </div>
+        <div id="header-links">
+            <a href="#credit-cards">Credit Cards</a>
+            <a href="#spending">Spending</a>
+            <a href="#point-valuation">Point Valuation</a>
+            <a href="#optimize">Optimize</a>
+        </div>
+    </header>
+    <div id="page">
+        <div id="credit-cards" class="content">
+            <h2>Credit Cards</h2>
+            <div class="card-container">
+                <div class="arrow">
+                    <img src="images/arrowLeft.png">
+                </div>
+                <div id="card-item-center">
+                    <img src="images/cibcAventuraVisaInfinite.png">
+                </div>
+                <div class="arrow">
+                    <img src="images/arrowRight.png">
+                </div>
+            </div>
+            <div id="card-description">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Card name:</td>
+                            <td>CIBC Aventura Visa Infinite</td>
+                        </tr>
+                        <tr>
+                            <td>Reward type:</td>
+                            <td>Aventura</td>
+                        </tr>
+                        <tr>
+                            <td>Annual fee:</td>
+                            <td>$139</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gas</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Grocery</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Restaurant</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Travel</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Transit</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Entertainment</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Drug Store</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Recurring Bills</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>General</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="spending" class="content">
+            <h2>Spending</h2>
+            <p>Please enter your average monthly spending</p>
+            <form id="spending-form">
+                <div>
+                    <label>Gas</label>
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Grocery</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Restaurant</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Travel</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Transit</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Entertainment</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Drug Store</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>Recurring Bills</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <div>
+                    <label>General</label> 
+                    <input type="text" placeholder="0">
+                </div>
+                <button type="button">Update spending</button>
+            </form>
+        </div>
+        <div id="point-valuation" class="content">
+            <h2>Point Valuation</h2>
+            <p>If you value any point currency differently than the default values, please modify below.</p>
+            <small>All valuations are in cents per point (cpp)</small>
+            <form id="point-valuation-form">
+                <div>
+                    <label>Aeroplan</label>
+                    <input type="text" placeholder="2.1">
+                </div>
+                <div>
+                    <label>Aventura</label> 
+                    <input type="text" placeholder="1.5">
+                </div>
+                <div>
+                    <label>AMEX</label> 
+                    <input type="text" placeholder="1">
+                </div>
+                <div>
+                    <label>Cashback<label> 
+                    <input type="text" placeholder="1">
+                </div>
+                <div>
+                    <label>Scene</label> 
+                    <input type="text" placeholder="1">
+                </div>
+                <div>
+                    <label>BMO</label> 
+                    <input type="text" placeholder="0.7">
+                </div>
+                <button type="button">Update valuations</button>
+                <button type="button">Reset valuations</button>
+            </form>
+        </div>
+        <div id="optimize" class="content">
+            <h2>Optimize</h2>
+            <button type="button">Find Your Best Credit Card Now!</button>
+            <p>Your recommended card is:</p>
+            <div class="card-container">
+                <div id="recommended-card">
+                    <img src="images/cibcAventuraVisaInfinite.png">
+                </div>
+            </div>
+            <p>Your top three recommendations are:</p>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Card Name</th>
+                        <th>Point Type</th>
+                        <th>Annual Spending</th>
+                        <th>Annual Points Earned</th>
+                        <th>Annual Reward Value ($)</th>
+                        <th>Annual Fee ($)</th>
+                        <th>Annual Net Value ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CIBC Aventura Visa Infinite</td>
+                        <td>Aventura</td>
+                        <td>$21000</td>
+                        <td>15600</td>
+                        <td>$360</td>
+                        <td>$120</td>
+                        <td>$240</td>
+                    </tr>
+                    <tr>
+                        <td>CIBC Aventura Visa Infinite</td>
+                        <td>Aventura</td>
+                        <td>$21000</td>
+                        <td>15600</td>
+                        <td>$360</td>
+                        <td>$120</td>
+                        <td>$240</td>
+                    </tr>
+                    <tr>
+                        <td>CIBC Aventura Visa Infinite</td>
+                        <td>Aventura</td>
+                        <td>$21000</td>
+                        <td>15600</td>
+                        <td>$360</td>
+                        <td>$120</td>
+                        <td>$240</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="footer-title">
+            <h1>Credit Card Optimizer</h1>
+        </div>
+        <div id="footer-copyright">
+            &copy Alexander Proskiw, 2024
+        </div>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>
